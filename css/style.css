@@ -724,7 +724,7 @@ ul.navbar-nav > li > a {
 }
 ul.navbar-nav > li:hover > a,
 ul.navbar-nav > li.active > a {
-  color: #21324a !important;
+  color: #fff !important;
 }
 
 /*-- Logo --*/
@@ -1878,7 +1878,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   margin: 0;
 }
 .shuffle-btn-group label.active {
-  color: #212121;
+  color: #FFF;
   background: #21324a;
 }
 .shuffle-btn-group label input {
@@ -2442,7 +2442,7 @@ img.testimonial-thumb {
 /*-- Copyright --*/
 .copyright {
   background: #21324a;
-  color: #111;
+  color: #FFF;
   padding: 25px 0;
   position: relative;
   z-index: 1;
@@ -2454,11 +2454,12 @@ img.testimonial-thumb {
   display: inline-block;
   line-height: 12px;
   padding-left: 15px;
+  color: #fff;
 }
 
 .footer-menu ul.nav li a {
   background: none;
-  color: #111;
+  color: #fff;
   padding: 0;
 }
 
@@ -2492,7 +2493,7 @@ img.testimonial-thumb {
   line-height: 36px;
   background: rgba(0, 0, 0, 0.9);
   border-radius: 3px;
-  color: #21324a;
+  color: #fff;
   font-weight: 700;
   font-size: 16px;
   padding: 0;
