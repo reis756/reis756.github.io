@@ -35,6 +35,13 @@
   <!-- Template styles-->
   <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("nyfTFbj0i8X1Rb-eu"); // Substitua pela Public Key do EmailJS
+        })();
+    </script>
+
 </head>
 <body>
 <!-- Header start -->
@@ -76,7 +83,7 @@
                           </div>
                       </li>
                       <li class="header-get-a-quote">
-                          <a class="btn btn-primary" href="contact.html">Orçamento</a>
+                          <a class="btn btn-primary" href="#contact">Contato</a>
                       </li>
                   </ul><!-- Ul end -->
               </div><!-- header right end -->
@@ -98,15 +105,15 @@
                 <div id="navbar-collapse" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav mr-auto">
                       <li class="nav-item dropdown active">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Empresa <i class=""></i></a>
+                          <a href="#company" class="nav-link">Empresa<i class=""></i></a>
                       </li>
 
                       <li class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nossa Atuação <i class=""></i></a>
+                          <a href="#project-area" class="nav-link">Nossa Atuação<i class=""></i></a>
                       </li>
               
                       <li class="nav-item">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contato <i class=""></i></a>
+                          <a href="#contact" class="nav-link">Contato<i class=""></i></a>
                       </li>              
                     </ul>
                 </div>
@@ -139,7 +146,7 @@
                 <h3 class="slide-sub-title" data-animation-in="slideInRight">Planejamento</h3>
                 <h2 class="slide-title" data-animation-in="slideInLeft">Estratégia e Definição de Metas</h2>
                 <p data-animation-in="slideInLeft" data-duration-in="1.2">
-                    <a href="contact.html" class="slider btn btn-primary">Entre em contato</a>
+                    <a href="#contact" class="slider btn btn-primary">Entre em contato</a>
                 </p>
               </div>
           </div>
@@ -155,7 +162,7 @@
                   <h3 class="slide-sub-title" data-animation-in="slideInRight">Desenvolvimento</h3>
                   <h2 class="slide-title" data-animation-in="slideInLeft">Inovação e Execução Eficiente</h2>
                 <p data-animation-in="slideInLeft" data-duration-in="1.2">
-                    <a href="contact.html" class="slider btn btn-primary">Entre em contato</a>
+                    <a href="#contact" class="slider btn btn-primary">Entre em contato</a>
                 </p>
               </div>
           </div>
@@ -171,7 +178,7 @@
                   <h3 class="slide-sub-title" data-animation-in="slideInRight">Comercialização</h3>
                   <h2 class="slide-title" data-animation-in="slideInLeft">Maximizando Vendas e Parcerias</h2>
                 <p data-animation-in="slideInLeft" data-duration-in="1.2">
-                    <a href="contact.html" class="slider btn btn-primary">Entre em contato</a>
+                    <a href="#contact" class="slider btn btn-primary">Entre em contato</a>
                 </p>
               </div>
           </div>
@@ -187,7 +194,7 @@
                   <h3 class="slide-sub-title" data-animation-in="slideInRight">Administração</h3>
                   <h2 class="slide-title" data-animation-in="slideInLeft">Gestão Operacional de Excelência</h2>
                 <p data-animation-in="slideInLeft" data-duration-in="1.2">
-                    <a href="contact.html" class="slider btn btn-primary">Entre em contato</a>
+                    <a href="#contact" class="slider btn btn-primary">Entre em contato</a>
                 </p>
               </div>
           </div>
@@ -210,288 +217,133 @@
   </div><!-- Container end -->
 </section><!-- Action end -->
 
-<section id="ts-features" class="ts-features">
+<section id="company" class="ts-features">
   <div class="container">
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-12 text-center">
           <div class="ts-intro">
-              <h2 class="into-title">Sobre nós</h2>
+              <h2 class="into-title">A empresa</h2>
               <h3 class="into-sub-title">ABL Shopping</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type 
-                specimen book. </p>
+              <p>
+                  Desde 1982 realizando ideias que criam memórias,
+                  possuímos uma vasta experiência em todo o Brasil,
+                  com 45 shoppings realizados em 14 estados do país.
+              </p>
           </div><!-- Intro box end -->
-
-          <div class="gap-20"></div>
-
-          <div class="row">
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                        <i class="fas"><img loading="lazy" src="images/1.png" alt="Planejamento"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">Planejamento</h3>
-                    </div>
-                </div><!-- Service 1 end -->
-              </div><!-- col end -->
-
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                      <i class="fas"><img loading="lazy" src="images/2.png" alt="Desenvolvimento"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">Desenvolvimento</h3>
-                    </div>
-                </div><!-- Service 2 end -->
-              </div><!-- col end -->
-          </div><!-- Content row 1 end -->
-
-          <div class="row">
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                      <i class="fas"><img loading="lazy" src="images/3.png" alt="Administração"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">Comercialização</h3>
-                    </div>
-                </div><!-- Service 1 end -->
-              </div><!-- col end -->
-
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                    <span class="ts-service-icon">
-                      <i class="fas"><img loading="lazy" src="images/4.png" alt="ABL Shopping - Desde 1982"></i>
-                    </span>
-                    <div class="ts-service-box-content">
-                      <h3 class="service-box-title">Administração</h3>
-                    </div>
-                </div><!-- Service 2 end -->
-              </div><!-- col end -->
-          </div><!-- Content row 1 end -->
         </div><!-- Col end -->
 
-        <div class="col-lg-6 mt-4 mt-lg-0">
-          <h3 class="into-sub-title">Por que contratar a ABL?</h3>
-          <p>Maior expertise da ABL é montagem de negócios. Temos o “know how” de Brasil</p>
-
-          <div class="accordion accordion-group" id="our-values-accordion">
-              <div class="card">
-                <div class="card-header p-0 bg-transparent" id="headingOne">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Como aprovar um projeto
-                      </button>
-                    </h2>
-                </div>
-              
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#our-values-accordion">
-                    <div class="card-body">
-                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header p-0 bg-transparent" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Planejar um Shopping
-                      </button>
-                    </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#our-values-accordion">
-                    <div class="card-body">
-                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header p-0 bg-transparent" id="headingThree">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Como Comercializar
-                      </button>
-                    </h2>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#our-values-accordion">
-                    <div class="card-body">
-                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header p-0 bg-transparent" id="headingThree">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Como Administrar
-                      </button>
-                    </h2>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#our-values-accordion">
-                    <div class="card-body">
-                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </div>
-                </div>
-              </div>
-          </div>
-          <!--/ Accordion end -->
-
-        </div><!-- Col end -->
     </div><!-- Row end -->
   </div><!-- Container end -->
 </section><!-- Feature are end -->
 
+<!-- MAP AREA -->
 <section id="facts" class="facts-area dark-bg">
   <div class="container">
     <img class="img-fluid" loading="lazy" src="images/mapa.png" alt="ABL Shopping - Atuações">
   </div>
+
+    <div class="container">
+        <img class="img-fluid" loading="lazy" src="images/mapa2.png" alt="ABL Shopping - Atuações">
+    </div>
   <!--/ Container end -->
-</section><!-- Facts end -->
+</section><!-- MAP end -->
 
 <section id="project-area" class="project-area solid-bg">
   <div class="container">
     <div class="row text-center">
-      <div class="col-lg-12">
+      <div class="col-lg-12 text-center">
         <h3 class="section-sub-title">Nossa Atuação</h3>
       </div>
     </div>
-    <!--/ Title row end -->
 
-    <div class="row">
-      <div class="col-12">
-        <div class="shuffle-btn-group">
-          <label class="active" for="all">
-            <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">Planejamento
-          </label>
-          <label for="commercial">
-            <input type="radio" name="shuffle-filter" id="commercial" value="commercial">Desenvolvimento
-          </label>
-          <label for="education">
-            <input type="radio" name="shuffle-filter" id="education" value="education">Comercialização
-          </label>
-          <label for="government">
-            <input type="radio" name="shuffle-filter" id="government" value="government">Administração
-          </label>
-        </div><!-- project filter end -->
-
-
-        <div class="row shuffle-wrapper">
-          <div class="col-1 shuffle-sizer"></div>
-
-          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;government&quot;,&quot;healthcare&quot;]">
-            <div class="project-img-container">
-              <a class="gallery-popup" href="images/projects/project1.jpg" aria-label="project-img">
-                <img class="img-fluid" src="images/projects/project1.jpg" alt="project-img">
-                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-              </a>
-              <div class="project-item-info">
-                <div class="project-item-info-content">
-                  <h3 class="project-item-title">
-                    <a href="projects-single.html">Capital Teltway Building</a>
-                  </h3>
-                  <p class="project-cat">Commercial, Interiors</p>
-                </div>
+      <div class="accordion accordion-group col-lg-12" id="our-values-accordion">
+          <div class="card">
+              <div class="card-header p-0 bg-transparent" id="headingOne">
+                  <h2 class="mb-0">
+                      <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <img loading="lazy" src="images/1.png" alt="Planejamento">
+                          Planejamento
+                      </button>
+                  </h2>
               </div>
-            </div>
-          </div><!-- shuffle item 1 end -->
 
-          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;healthcare&quot;]">
-            <div class="project-img-container">
-              <a class="gallery-popup" href="images/projects/project2.jpg" aria-label="project-img">
-                <img class="img-fluid" src="images/projects/project2.jpg" alt="project-img">
-                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-              </a>
-              <div class="project-item-info">
-                <div class="project-item-info-content">
-                  <h3 class="project-item-title">
-                    <a href="projects-single.html">Ghum Touch Hospital</a>
-                  </h3>
-                  <p class="project-cat">Healthcare</p>
-                </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#our-values-accordion">
+                  <div class="card-body">
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </div>
               </div>
-            </div>
-          </div><!-- shuffle item 2 end -->
-
-          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;commercial&quot;]">
-            <div class="project-img-container">
-              <a class="gallery-popup" href="images/projects/project3.jpg" aria-label="project-img">
-                <img class="img-fluid" src="images/projects/project3.jpg" alt="project-img">
-                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-              </a>
-              <div class="project-item-info">
-                <div class="project-item-info-content">
-                  <h3 class="project-item-title">
-                    <a href="projects-single.html">TNT East Facility</a>
-                  </h3>
-                  <p class="project-cat">Government</p>
-                </div>
+          </div>
+          <div class="card">
+              <div class="card-header p-0 bg-transparent" id="headingTwo">
+                  <h2 class="mb-0">
+                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <img loading="lazy" src="images/2.png" alt="Desenvolvimento">
+                          Desenvolvimento
+                      </button>
+                  </h2>
               </div>
-            </div>
-          </div><!-- shuffle item 3 end -->
-
-          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;education&quot;,&quot;infrastructure&quot;]">
-            <div class="project-img-container">
-              <a class="gallery-popup" href="images/projects/project4.jpg" aria-label="project-img">
-                <img class="img-fluid" src="images/projects/project4.jpg" alt="project-img">
-                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-              </a>
-              <div class="project-item-info">
-                <div class="project-item-info-content">
-                  <h3 class="project-item-title">
-                    <a href="projects-single.html">Narriot Headquarters</a>
-                  </h3>
-                  <p class="project-cat">Infrastructure</p>
-                </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#our-values-accordion">
+                  <div class="card-body">
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </div>
               </div>
-            </div>
-          </div><!-- shuffle item 4 end -->
-
-          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;infrastructure&quot;,&quot;education&quot;]">
-            <div class="project-img-container">
-              <a class="gallery-popup" href="images/projects/project5.jpg" aria-label="project-img">
-                <img class="img-fluid" src="images/projects/project5.jpg" alt="project-img">
-                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-              </a>
-              <div class="project-item-info">
-                <div class="project-item-info-content">
-                  <h3 class="project-item-title">
-                    <a href="projects-single.html">Kalas Metrorail</a>
-                  </h3>
-                  <p class="project-cat">Infrastructure</p>
-                </div>
+          </div>
+          <div class="card">
+              <div class="card-header p-0 bg-transparent" id="headingThree">
+                  <h2 class="mb-0">
+                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <img loading="lazy" src="images/3.png" alt="Comercialização">
+                          Comercialização
+                      </button>
+                  </h2>
               </div>
-            </div>
-          </div><!-- shuffle item 5 end -->
-
-          <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;residential&quot;]">
-            <div class="project-img-container">
-              <a class="gallery-popup" href="images/projects/project6.jpg" aria-label="project-img">
-                <img class="img-fluid" src="images/projects/project6.jpg" alt="project-img">
-                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
-              </a>
-              <div class="project-item-info">
-                <div class="project-item-info-content">
-                  <h3 class="project-item-title">
-                    <a href="projects-single.html">Ancraft Avenue House</a>
-                  </h3>
-                  <p class="project-cat">Residential</p>
-                </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#our-values-accordion">
+                  <div class="card-body">
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </div>
               </div>
-            </div>
-          </div><!-- shuffle item 6 end -->
-        </div><!-- shuffle end -->
+          </div>
+          <div class="card">
+              <div class="card-header p-0 bg-transparent" id="headingFour">
+                  <h2 class="mb-0">
+                      <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          <img loading="lazy" src="images/4.png" alt="Administração">
+                          Administração
+                      </button>
+                  </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#our-values-accordion">
+                  <div class="card-body">
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </div>
+              </div>
+          </div>
       </div>
 
-    </div><!-- Content row end -->
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="entry-header">
+                      <h3 class="entry-title text-center">Maior expertise da ABL é montagem de negócios</h3>
+                      <p><b>Temos o "kow how" de Brasil</b>
+                          <ul>
+                              <li>Como aprovar um projeto</li>
+                              <li>Planejar um Shopping</li>
+                              <li>Como Omercializar</li>
+                              <li>Como Aministrar</li>
+                          </ul>
+                      </p>
+                  </div><!-- Intro box end -->
+              </div><!-- Col end -->
+
+          </div><!-- Row end -->
+      </div><!-- Container end -->
   </div>
   <!--/ Container end -->
 </section><!-- Project area end -->
 
 
-<section id="news" class="news">
+<section id="contact" class="news">
   <div class="container">
     <div class="row text-center">
         <div class="col-12">
@@ -506,7 +358,7 @@
                 Telefone: +55 (21) 98132-2310 / +55 (21) 3529-8558 <br>
                 Email: contato@ablp.com.br<br>
             </p>
-          <h3 class="column-title">Teremos o prazer de responder o mais breve possível</h3>
+            <p><b>Teremos o prazer de responder o mais breve possível</b></p>
           <!-- contact form works with formspree.io  -->
           <!-- contact form activation doc: https://docs.themefisher.com/constra/contact-form/ -->
           <form id="contact-form" action="#" method="post" role="form">
@@ -564,7 +416,7 @@
           <div class="col-md-6">
             <div class="footer-menu text-center text-md-right">
               <ul class="list-unstyled">
-                <li><a href="about.html">Empres</a></li>
+                <li><a href="about.html">Empresa</a></li>
                 <li><a href="team.html">Nossa Atuação</a></li>
                 <li><a href="faq.html">Contato</a></li>
               </ul>
@@ -585,6 +437,28 @@
 
   <!-- Javascript Files
   ================================================== -->
+
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Impede a página de recarregar
+
+        const params = {
+            nome: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+        };
+
+        emailjs.send("SEU_SERVICE_ID", "SEU_TEMPLATE_ID", params)
+            .then(function () {
+                document.getElementById("status").innerText = "Mensagem enviada com sucesso!";
+            })
+            .catch(function (error) {
+                document.getElementById("status").innerText = "Erro ao enviar a mensagem.";
+                console.error("Erro:", error);
+            });
+    });
+</script>
 
   <!-- initialize jQuery Library -->
   <script src="plugins/jQuery/jquery.min.js"></script>

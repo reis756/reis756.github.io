@@ -2071,6 +2071,12 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   padding: 13px 15px;
   padding-bottom: 10px;
 }
+
+.accordion-group .card-header img {
+  max-width: 24px;
+  margin-bottom: 10px;
+}
+
 .accordion-group .card-header .btn:before {
   font-family: "Font Awesome 5 Free";
   position: absolute;

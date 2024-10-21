@@ -56,6 +56,13 @@ FACEBOOK: https://www.facebook.com/themefisher
   <!-- Template styles-->
   <link rel="stylesheet" href="css/style.css">
 
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+        emailjs.init("nyfTFbj0i8X1Rb-eu"); // Substitua pela Public Key do EmailJS
+    })();
+  </script>
+
 </head>
 <body>
   <div class="body-inner">
@@ -135,7 +142,7 @@ FACEBOOK: https://www.facebook.com/themefisher
                     </div>
                   </li>
                   <li class="header-get-a-quote">
-                    <a class="btn btn-primary" href="contact.html">Get A Quote</a>
+                    <a class="btn btn-primary" href="#main-container">Get A Quote</a>
                   </li>
                 </ul><!-- Ul end -->
             </div><!-- header right end -->
@@ -445,6 +452,28 @@ FACEBOOK: https://www.facebook.com/themefisher
     </div><!-- Copyright end -->
   </footer><!-- Footer end -->
 
+
+    <script>
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
+          event.preventDefault(); // Impede a página de recarregar
+
+          const params = {
+              nome: document.getElementById("name").value,
+              email: document.getElementById("email").value,
+              subject: document.getElementById("subject").value,
+              message: document.getElementById("message").value,
+          };
+
+          emailjs.send("SEU_SERVICE_ID", "SEU_TEMPLATE_ID", params)
+              .then(function () {
+                  document.getElementById("status").innerText = "Mensagem enviada com sucesso!";
+              })
+              .catch(function (error) {
+                  document.getElementById("status").innerText = "Erro ao enviar a mensagem.";
+                  console.error("Erro:", error);
+              });
+      });
+    </script>
 
   <!-- Javascript Files
   ================================================== -->
