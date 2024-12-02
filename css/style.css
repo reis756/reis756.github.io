@@ -1690,8 +1690,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 }
 
 .service-box-title {
-  font-size: 16px;
-  margin: 0 0 10px;
+  font-size: 14px;
 }
 .service-box-title a {
   color: #333;
@@ -1810,7 +1809,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 
 /* Service Image */
 .ts-service-image-wrapper {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .ts-service-icon i {
@@ -1819,16 +1818,11 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   margin-top: 2px;
 }
 
-.ts-service-info {
-  margin-left: 30px;
-}
 .ts-service-info h3 {
-  font-size: 16px;
+  font-size: 14px;
 }
 .ts-service-info .learn-more {
-  text-transform: uppercase;
   font-size: 14px;
-  font-weight: 600;
 }
 .ts-service-info .learn-more:hover {
   color: #21324a;
