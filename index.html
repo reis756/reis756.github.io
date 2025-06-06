@@ -1,340 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-
-  <!-- Basic Page Needs
-================================================== -->
-  <meta charset="utf-8">
-  <title>ABL Shopping - Desde 1982</title>
-
-  <!-- Mobile Specific Metas
-================================================== -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Construction Html5 Template">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name=author content="Themefisher">
-  <meta name=generator content="Themefisher Constra HTML Template v1.0">
-
-  <!-- Favicon
-================================================== -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-  <!-- CSS
-================================================== -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
-  <!-- Animation -->
-  <link rel="stylesheet" href="plugins/animate-css/animate.css">
-  <!-- slick Carousel -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
-  <!-- Colorbox -->
-  <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
-  <!-- Template styles-->
-  <link rel="stylesheet" href="css/style.css">
-
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function () {
-            emailjs.init("nyfTFbj0i8X1Rb-eu"); // Substitua pela Public Key do EmailJS
-        })();
-    </script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notei - Em breve</title>
+  <style>
+    body {
+      background: #f8f9fa;
+      font-family: sans-serif;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #222;
+    }
+    p {
+      color: #555;
+    }
+    a {
+      margin-top: 20px;
+      display: inline-block;
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-<!-- Header start -->
-<header id="header" class="header-one">
-  <div class="bg-white">
-    <div class="container">
-      <div class="logo-area">
-          <div class="row align-items-center">
-            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
-                <a class="d-block" href="index.html">
-                  <img loading="lazy" src="images/logo.png" alt="ABL Shopping - Desde 1982">
-                </a>
-            </div><!-- logo end -->
-
-              <div class="col-lg-9 header-right">
-                  <ul class="top-info-box">
-                      <li>
-                          <div class="info-box">
-                              <div class="info-box-content">
-                                  <p class="info-box-title">Telefone:</p>
-                                  <p class="info-box-subtitle">+55 (21) 98132-2310</p>
-                              </div>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="info-box">
-                              <div class="info-box-content">
-                                  <p class="info-box-title">Telefone</p>
-                                  <p class="info-box-subtitle">+55 (21) 3529-8558</p>
-                              </div>
-                          </div>
-                      </li>
-                      <li class="last">
-                          <div class="info-box last">
-                              <div class="info-box-content">
-                                  <p class="info-box-title">E-mail:</p>
-                                  <p class="info-box-subtitle">contato@ablp.com.br</p>
-                              </div>
-                          </div>
-                      </li>
-                      <li class="header-get-a-quote">
-                          <a class="btn btn-primary" href="contact.html">Contato</a>
-                      </li>
-                  </ul><!-- Ul end -->
-              </div><!-- header right end -->
-          </div><!-- logo area end -->
+  <h1>Notei</h1>
+  <p>Estamos quase prontos. Em breve o Notei estará disponível para você escanear notas e organizar suas compras com facilidade!</p>
   
-      </div><!-- Row end -->
-    </div><!-- Container end -->
-  </div>
-
-  <div class="site-navigation">
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-              <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div id="navbar-collapse" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav mr-auto">
-                      <li class="nav-item dropdown active">
-                          <a href="#company" class="nav-link">Empresa<i class=""></i></a>
-                      </li>
-
-                      <li class="nav-item dropdown">
-                          <a href="projects.html" class="nav-link">Nossa Atuação<i class=""></i></a>
-                      </li>
-
-                      <li class="nav-item dropdown">
-                          <a href="developments.html" class="nav-link">Empreendimentos<i class=""></i></a>
-                      </li>
-              
-                      <li class="nav-item">
-                          <a href="contact.html" class="nav-link">Contato<i class=""></i></a>
-                      </li>              
-                    </ul>
-                </div>
-              </nav>
-          </div>
-          <!--/ Col end -->
-        </div>
-        <!--/ Row end -->
-
-        <div class="search-block" style="display: none;">
-          <label for="search-field" class="w-100 mb-0">
-            <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
-          </label>
-          <span class="search-close">&times;</span>
-        </div><!-- Site search end -->
-    </div>
-    <!--/ Container end -->
-
-  </div>
-  <!--/ Navigation end -->
-</header>
-<!--/ Header end -->
-
-<div class="banner-carousel banner-carousel-1 mb-0">
-  <div class="banner-carousel-item" style="background-image:url(images/slider-main/1.png)">
-    <div class="slider-content">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-              <div class="col-md-12 text-center">
-                <h3 class="slide-sub-title" data-animation-in="slideInRight">Planejamento</h3>
-                <h2 class="slide-title" data-animation-in="slideInLeft">Estratégia e Definição de Metas</h2>
-                <p data-animation-in="slideInLeft" data-duration-in="1.2">
-                    <a href="contact.html" class="slider btn btn-primary">Entre em contato</a>
-                </p>
-              </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="banner-carousel-item" style="background-image:url(images/slider-main/2.png)">
-    <div class="slider-content">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-              <div class="col-md-12 text-center">
-                  <h3 class="slide-sub-title" data-animation-in="slideInRight">Desenvolvimento</h3>
-                  <h2 class="slide-title" data-animation-in="slideInLeft">Inovação e Execução Eficiente</h2>
-                <p data-animation-in="slideInLeft" data-duration-in="1.2">
-                    <a href="contact.html" class="slider btn btn-primary">Entre em contato</a>
-                </p>
-              </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="banner-carousel-item" style="background-image:url(images/slider-main/3.png)">
-    <div class="slider-content">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-              <div class="col-md-12 text-center">
-                  <h3 class="slide-sub-title" data-animation-in="slideInRight">Comercialização</h3>
-                  <h2 class="slide-title" data-animation-in="slideInLeft">Maximizando Vendas e Parcerias</h2>
-                <p data-animation-in="slideInLeft" data-duration-in="1.2">
-                    <a href="contact.html" class="slider btn btn-primary">Entre em contato</a>
-                </p>
-              </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="banner-carousel-item" style="background-image:url(images/slider-main/4.png)">
-    <div class="slider-content">
-        <div class="container h-100">
-          <div class="row align-items-center h-100">
-              <div class="col-md-12 text-center">
-                  <h3 class="slide-sub-title" data-animation-in="slideInRight">Administração</h3>
-                  <h2 class="slide-title" data-animation-in="slideInLeft">Gestão Operacional de Excelência</h2>
-                <p data-animation-in="slideInLeft" data-duration-in="1.2">
-                    <a href="contact.html" class="slider btn btn-primary">Entre em contato</a>
-                </p>
-              </div>
-          </div>
-        </div>
-    </div>
-  </div>
-</div>
-
-<section class="call-to-action-box no-padding">
-  <div class="container">
-    <div class="action-style-box">
-        <div class="row align-items-center">
-          <div class="col-md-12 text-center">
-              <div class="call-to-action-text">
-                <h3 class="action-title">Na ABL, sua satisfação é nosso compromisso</h3>
-              </div>
-          </div><!-- Col end -->
-        </div><!-- row end -->
-    </div><!-- Action style box -->
-  </div><!-- Container end -->
-</section><!-- Action end -->
-
-<section id="company" class="ts-features">
-  <div class="container">
-    <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="ts-intro">
-              <h2 class="into-title">A empresa</h2>
-              <h3 class="into-sub-title">ABL Shopping</h3>
-              <p>
-                  Desde 1982 realizando ideias com uma vasta experiência em todo o Brasil.  São 45 shoppings realizados em 14 estados do país.
-              </p>
-          </div><!-- Intro box end -->
-        </div><!-- Col end -->
-
-    </div><!-- Row end -->
-  </div><!-- Container end -->
-</section><!-- Feature are end -->
-
-<!-- MAP AREA -->
-<section id="facts" class="facts-area dark-bg">
-  <div class="container">
-    <img class="img-fluid" loading="lazy" src="images/mapa.png" alt="ABL Shopping - Atuações">
-  </div>
-</section>
-
-<section id="facts" class="facts-area dark-bg">
-    <div class="container">
-        <img class="img-fluid" loading="lazy" src="images/mapa2.png" alt="ABL Shopping - Atuações">
-    </div>
-    <!--/ Container end -->
-</section><!-- MAP end -->
-
-<!--/ News end -->
-
-  <footer id="footer" class="footer bg-overlay">
-    <div class="copyright">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <div class="copyright-info">
-              <span>Copyright &copy; <script>
-                  2024
-                </script>, Designed &amp; Developed by <a href="https://www.linkedin.com/in/rodrigoreis004/">Rodrigo Reis</a></span>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="footer-menu text-center text-md-right">
-              <ul class="list-unstyled">
-                <li><a href="index.html">Empresa</a></li>
-                <li><a href="projects.html">Nossa Atuação</a></li>
-                <li><a href="contact.html">Contato</a></li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- Row end -->
-
-        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
-          <button class="btn btn-primary" title="Back to Top">
-            <i class="fa fa-angle-double-up"></i>
-          </button>
-        </div>
-
-      </div><!-- Container end -->
-    </div><!-- Copyright end -->
-  </footer><!-- Footer end -->
-
-
-  <!-- Javascript Files
-  ================================================== -->
-
-<script>
-    document.getElementById("contact-form").addEventListener("submit", function (event) {
-        event.preventDefault(); // Impede a página de recarregar
-
-        const params = {
-            nome: document.getElementById("name").value,
-            email: document.getElementById("email").value,
-            subject: document.getElementById("subject").value,
-            message: document.getElementById("message").value,
-        };
-
-        emailjs.send("SEU_SERVICE_ID", "SEU_TEMPLATE_ID", params)
-            .then(function () {
-                document.getElementById("status").innerText = "Mensagem enviada com sucesso!";
-            })
-            .catch(function (error) {
-                document.getElementById("status").innerText = "Erro ao enviar a mensagem.";
-                console.error("Erro:", error);
-            });
-    });
-</script>
-
-  <!-- initialize jQuery Library -->
-  <script src="plugins/jQuery/jquery.min.js"></script>
-  <!-- Bootstrap jQuery -->
-  <script src="plugins/bootstrap/bootstrap.min.js" defer></script>
-  <!-- Slick Carousel -->
-  <script src="plugins/slick/slick.min.js"></script>
-  <script src="plugins/slick/slick-animation.min.js"></script>
-  <!-- Color box -->
-  <script src="plugins/colorbox/jquery.colorbox.js"></script>
-  <!-- shuffle -->
-  <script src="plugins/shuffle/shuffle.min.js" defer></script>
-
-
-  <!-- Google Map API Key-->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU" defer></script>
-  <!-- Google Map Plugin-->
-  <script src="plugins/google-map/map.js" defer></script>
-
-  <!-- Template custom -->
-  <script src="js/script.js"></script>
-
-  </div><!-- Body inner end -->
-  </body>
-
-  </html>
+  <a href="politica.html">Política de Privacidade</a> | 
+  <a href="termos.html">Termos de Uso</a>
+</body>
+</html>
